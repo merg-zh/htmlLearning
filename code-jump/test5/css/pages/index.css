@@ -1,0 +1,60 @@
+/* reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* layout */
+.l-wrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.l-header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+
+/* component */
+.c-header__toggle {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+}
+
+.c-header__toggle > span {
+  display: block;
+  position: absolute;
+  transition: 0.3s;
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  top: 6px;
+}
+
+.c-header__toggle span:nth-child(2) {
+  top: 18px;
+}
+
+.l-header.is-open .c-header__toggle > span:nth-child(1) {
+  transform: rotateZ(45deg);
+  top: 14px;
+}
+
+.l-header.is-open .c-header__toggle > span:nth-child(2) {
+  transform: rotateZ(-45deg);
+  top: 14px;
+}

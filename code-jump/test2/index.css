@@ -1,0 +1,98 @@
+/* base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f9ff;
+}
+
+body:not(h1):not(h2):not(h3) {
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* layout */
+.l-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.l-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.l-header {
+  padding-top: 40px;
+}
+
+.l-footer {
+  padding-top: 40px;
+}
+
+/* component */
+.c-header__logo img {
+  width: 160px;
+}
+
+.c-mainvisual {
+  padding-top: 8px;
+}
+
+.c-index {
+  background-color: white;
+  margin-top: 24px;
+  padding: 24px 0;
+}
+
+.c-index__title {
+  font-size: 18px;
+}
+
+.c-index__list li {
+  list-style-position: inside;
+  padding-top: 8px;
+}
+
+.c-detail {
+  margin-top: 24px;
+}
+
+.c-detail__title {
+  font-size: 18px;
+}
+
+.c-detail__content > * {
+  padding: 16px 0;
+}
+
+.c-detail__info {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+
+.c-detail__link {
+  color: inherit;
+}
+
+@media screen and (min-width: 1024px) {
+  .c-detail__inner {
+    display: flex;
+    gap: 20px;
+  }
+
+  .c-detail img {
+    width: 270px;
+  }
+}

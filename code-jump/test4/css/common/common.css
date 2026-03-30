@@ -1,0 +1,91 @@
+/* reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* base */
+:root {
+  --accent-color: #24292e;
+}
+
+body {
+  color: #24292e;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  font-size: 1rem;
+}
+
+textarea {
+  resize: none;
+  font-size: 1rem;
+}
+
+/* layout */
+.l-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.l-header {
+  padding: 24px 0;
+}
+
+.l-main section {
+  padding-top: 64px;
+}
+
+.l-footer {
+  margin-top: 64px;
+  text-align: center;
+  background-color: var(--accent-color);
+}
+
+/* commponent */
+
+/* header */
+.c-header__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  .c-header__inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.c-header__linkList {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  text-decoration: none;
+  align-items: center;
+}
+
+.c-header__link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.c-header__instaImg {
+  width: 20px;
+}
+
+/* footer */
+.c-footer__copyright {
+  color: white;
+}

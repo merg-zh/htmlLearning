@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../css/common/common.css" />
+    <link rel="stylesheet" href="../css/pages/about.css" />
+    <link rel="stylesheet" href="../css/pages/index.css" />
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="l-container">
+        <div class="c-header__inner">
+          <h1 class="c-header__logo">
+            <a href="/"><img src="../img/logo.svg" alt="My Works logo" /></a>
+          </h1>
+
+          <nav>
+            <ul class="c-header__linkList">
+              <li class="c-header__link"><a href="./about.html">About</a></li>
+              <li class="c-header__link"><a href="./works.html">Works</a></li>
+              <li class="c-header__link"><a href="./news.html">news</a></li>
+              <li class="c-header__link">
+                <a href="./contact.html">contact</a>
+              </li>
+              <li class="c-header__link">
+                <a href="./insta.html"
+                  ><img
+                    class="c-header__instaImg"
+                    src="../img/icon-instagram.png"
+                    alt="インスタグラムのリンク"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="l-main">
+      <div class="c-mainvisual">
+        <picture>
+          <source src="../img/mainvisual-pc.jpg" media="(min-width: 600px)" />
+          <img src="../img/mainvisual-sp.jpg" alt="白い家" />
+        </picture>
+      </div>
+      <section class="c-about">
+        <div class="l-container">
+          <h2 class="c-about__title">About</h2>
+          <div class="c-about__content">
+            <p>Xxxxx Ashley</p>
+            <address class="c-about__address">
+              <ul>
+                <li>
+                  2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo
+                  106-0031 Japan
+                </li>
+                <li>tel: 000-0000-0000</li>
+                <li>url: www.xxxxxx.jp</li>
+                <li>mail: xxx@xxxxxx.jp</li>
+              </ul>
+            </address>
+            <p>
+              プロフィールテキストテキストテキストテキストテキストテキストテキストテキスト
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="c-works">
+        <div class="l-container">
+          <h2 class="c-works__title">Works</h2>
+          <ul class="c-pictures___list">
+            <li class="c-pictures__item">
+              <img src="../img/works1.jpg" alt="黒い外壁と黄色い縦のライン" />
+            </li>
+            <li class="c-pictures__item">
+              <img src="../img/works2.jpg" alt="赤と白の幾何学的な建物の外観" />
+            </li>
+            <li class="c-pictures__item">
+              <img src="../img/works3.jpg" alt="黒いデスクとモニター" />
+            </li>
+            <li class="c-pictures__item">
+              <img src="../img/works4.jpg" alt="白い外壁と色とりどりの窓" />
+            </li>
+            <li class="c-pictures__item">
+              <img src="../img/works5.jpg" alt="曲線的な形の建物" />
+            </li>
+            <li class="c-pictures__item">
+              <img src="../img/works6.jpg" alt="階段状のマンション" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="c-news">
+        <div class="l-container">
+          <h2 class="c-news__title">News</h2>
+          <dl class="c-news__list">
+            <div>
+              <dt>2020.xx.xx</dt>
+              <dd>デザイン雑誌「XXXXX Vol.11」に掲載していただきました。</dd>
+            </div>
+            <div>
+              <dt>2020.xx.xx</dt>
+              <dd>XX月XX日から写真集「XXXXXX」の販売を開始します。</dd>
+            </div>
+            <div>
+              <dt>2019.xx.xx</dt>
+              <dd>
+                【イベント開催のお知らせ】テキストテキストテキストテキスト
+              </dd>
+            </div>
+            <div>
+              <dt>2019.xx.xx</dt>
+              <dd>デザイン雑誌「XXXXXX VOl.10」に掲載していただきました。</dd>
+            </div>
+            <div>
+              <dt>2019.xx.xx</dt>
+              <dd>【個展開催のお知らせ】テキストテキストテキストテキスト</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+      <section class="c-contact">
+        <div class="l-container">
+          <h2 class="c-contact__title">Contact</h2>
+          <form class="c-contact__form" action="/post" method="post">
+            <div class="c-contact__content">
+              <label for="c-contact__name">NAME</label>
+              <input
+                type="text"
+                id="c-contact__name"
+                autocomplete="name"
+                name="name"
+              />
+              <label for="c-contact__mail">E-mail</label>
+              <input
+                type="email"
+                id="c-contact__mail"
+                autocomplete="email"
+                name="mail"
+              />
+              <label for="c-contact__message">MESSAGE</label>
+              <textarea
+                id="c-contact__message"
+                rows="7"
+                name="message"
+                autocomplete="off"
+              ></textarea>
+            </div>
+            <button class="c-contact__button" type="submit">送信</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="l-footer">
+      <small class="c-footer__copyright">&copy;2020 My Work</small>
+    </footer>
+  </body>
+</html>

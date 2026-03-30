@@ -1,0 +1,141 @@
+/* reset */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* base */
+body {
+  color: #333333;
+  line-height: 1.6;
+  font-family:
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic",
+    Meiryo, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  margin-top: 64px;
+}
+
+/* layout */
+.l-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.l-header {
+  padding-top: 24px;
+}
+
+.l-main {
+  padding-top: 8px;
+}
+
+.l-footer {
+  padding-top: 24px;
+  text-align: center;
+}
+
+.l-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* component */
+.c-header__logo img {
+  width: 180px;
+  height: 18px;
+}
+
+.c-index {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 40px;
+}
+
+.c-index__list {
+  border: 1px solid #333333;
+  list-style-position: inside;
+  margin-top: 24px;
+  padding-bottom: 16px;
+}
+
+.c-index__item {
+  padding-top: 16px;
+}
+
+.c-pictures__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  list-style: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .c-pictures__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.c-pictures__item img {
+  width: 100%;
+}
+
+.c-detail {
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+.c-detail__title {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .c-detail__inner {
+    display: flex;
+  }
+}
+
+.c-detail__info {
+  padding: 24px;
+  border-bottom: 1px solid #333333;
+}
+
+@media screen and (min-width: 1024px) {
+  .c-detail__info {
+    border-bottom: none;
+    border-right: 1px solid #333333;
+    flex: 1;
+  }
+}
+
+.c-detail__info dt {
+  font-weight: bold;
+  padding-top: 16px;
+}
+
+.c-detail__content {
+  padding: 24px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+@media screen and (min-width: 1024px) {
+  .c-detail__content {
+    flex: 3;
+  }
+}
+
+.c-detail__link {
+  color: inherit;
+}

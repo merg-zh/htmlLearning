@@ -1,0 +1,13 @@
+.c-about__title {
+  text-align: center;
+}
+
+.c-about__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.c-about__content ul {
+  list-style: none;
+}
