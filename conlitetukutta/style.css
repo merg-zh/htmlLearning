@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* base */
+body {
+  color: #333333;
+  line-height: 1.6;
+  font-family:
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", "Yu Gothic",
+    Meiryo, sans-serif;
+  background: #f4f7fc;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  margin-top: 56px;
+}
+
+p {
+  margin: 16px 0;
+}
+
+h1 {
+  border-bottom: 4px solid black;
+}
+
+h2 {
+  border-bottom: 2px solid black;
+}
+
+h3 {
+  border-left: 5px solid black;
+  padding-left: 8px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.l-container {
+  max-width: 710px;
+  margin: 0 auto;
+}
+
+.l-header {
+  background: #cef4ff;
+  padding: 12px;
+}
+
+.l-main {
+  margin: 80px 0;
+}
+
+.c-header__logo {
+  width: 400px;
+}
+
+.c-mainvisual {
+  width: 100%;
+  margin-top: 24px;
+}
+
+.c-index__title {
+  margin: 0;
+}
+
+.c-index__box {
+  box-shadow: 0px 0px 2px 1px rgb(128, 128, 128);
+  width: 500px;
+  margin: 0 auto;
+  background: #f1f1f17d;
+  border-radius: 15px;
+}
+
+.c-index__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.c-index__list li a {
+  color: gray;
+}
